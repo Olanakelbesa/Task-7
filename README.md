@@ -119,7 +119,7 @@ Integrate data from a provided API endpoint into your application and populate t
 
 ## Screenshots
 
-![Screenshot 2024-08-05 145303](https://github.com/user-attachments/assets/9a395f0a-c0c7-4ffb-83a8-1edfc1cf0377)
+![Screenshot 2024-08-05 222756](https://github.com/user-attachments/assets/491b18e0-5c88-4dd9-81a3-f7ce95b0c209)
 ![Screenshot 2024-08-05 145328](https://github.com/user-attachments/assets/b4ff8fb9-f998-439c-913f-0bd22b3b2883)
 
 
