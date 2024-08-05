@@ -30,7 +30,7 @@ const JobCard: React.FC<JobCardProps> = ({ job }) => {
 				</div>
 			</div>
 			<div className="pl-20 text-sm">
-				<div className="pr-20">
+				<div className="pr-3">
 					<span>{job.description}</span>
 				</div>
 				<div className="flex gap-2 mt-7">
