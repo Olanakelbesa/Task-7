@@ -6,11 +6,10 @@ import Link from "next/link";
 
 const Dashboard = () => {
 	const { jobData, error, loading } = useJobData();
-	console.log("jobData", jobData);
 
 	return (
-		<div className="m-5 h-full w-full max-w-6xl pl-5">
-			<Header />
+		<div className=" h-full w-full max-w-6xl pl-5 ">
+			<Header num={jobData?.length ?? 0} />
 
 			{loading && <div>Loading...</div>}
 			{error && <div>Error: {error}</div>}

@@ -32,11 +32,11 @@ const Description = ({ id }: JobId) => {
 	}
 
 	return (
-		<div className="flex p-5">
-			<div id="leftSide" className="pr-20 pl-5">
+		<div className="flex p-5 ">
+			<div id="leftSide" className="px-10 max-w-6xl w-full pr-20">
 				<div>
 					<h3 className="font-black text-xl">Description</h3>
-					<p className="py-5 mb-2 text-gray-500">{curData.description}</p>
+					<p className="py-5 mb-2 text-gray-500 ">{curData.description}</p>
 				</div>
 				<div>
 					<h3 className="font-black text-xl">Responsibilities</h3>
@@ -73,7 +73,7 @@ const Description = ({ id }: JobId) => {
 					</div>
 				</div>
 			</div>
-			<div id="rightSide" className="mr-5">
+			<div id="rightSide" className="">
 				<div>
 					<h3 className="font-black text-xl px-2">About</h3>
 					<div className="block ">
@@ -83,7 +83,7 @@ const Description = ({ id }: JobId) => {
 							</div>
 							<div className="block ml-3">
 								<div className="text-gray-400"> Posted On </div>
-								<div>{curData.datePosted}</div>
+								<div>{curData.datePosted.split("T")[0]}</div>
 							</div>
 						</div>
 						<div className="flex p-2">
@@ -92,7 +92,7 @@ const Description = ({ id }: JobId) => {
 							</div>
 							<div className="block ml-3">
 								<div className="text-gray-400"> Deadline </div>
-								<div>{curData.deadline}</div>
+								<div>{curData.deadline.substring(0, 10)}</div>
 							</div>
 						</div>
 						<div className="flex p-2">
@@ -101,7 +101,13 @@ const Description = ({ id }: JobId) => {
 							</div>
 							<div className="block ml-3">
 								<div className="text-gray-400"> Location </div>
-								<div>{curData.location}</div>
+								<div>
+									{curData.location.map((loc, index) => (
+										<span className="block" key={index}>
+											{loc}
+										</span>
+									))}
+								</div>
 							</div>
 						</div>
 						<div className="flex p-2">
@@ -110,7 +116,7 @@ const Description = ({ id }: JobId) => {
 							</div>
 							<div className="block ml-3">
 								<div className="text-gray-400"> Start Date </div>
-								<div>{curData.startDate}</div>
+								<div>{curData.startDate.split("T")[0]}</div>
 							</div>
 						</div>
 						<div className="flex p-2 ">
@@ -119,7 +125,7 @@ const Description = ({ id }: JobId) => {
 							</div>
 							<div className="block ml-3">
 								<div className="text-gray-400"> End Date </div>
-								<div>{curData.endDate}</div>
+								<div>{curData.endDate.split("T")[0]}</div>
 							</div>
 						</div>
 					</div>

@@ -13,7 +13,7 @@ const JobCard: React.FC<JobCardProps> = ({ job }) => {
 		return string.charAt(0).toUpperCase() + string.slice(1);
 	}
 	return (
-		<div className="p-5 border-solid border-2 border-sky-200 rounded-2xl cursor-pointer mb-5 mr-3">
+		<div className="p-5 border-solid border-2 border-sky-200 rounded-2xl cursor-pointer mb-5 mr-3 hover:bg-slate-100">
 			<div className="flex">
 				<Image
 					src={job.logoUrl}
@@ -34,7 +34,7 @@ const JobCard: React.FC<JobCardProps> = ({ job }) => {
 					<span>{job.description}</span>
 				</div>
 				<div className="flex gap-2 mt-7">
-					<button className="rounded-xl p-2 border-solid border-2 border-green-300 text-green-500">
+					<button className="rounded-xl p-2 border-solid border-2 border-green-300 text-green-500 hover:bg-green-100 ">
 						{capitalizeFirstLetter(job.opType)}
 					</button>
 				</div>

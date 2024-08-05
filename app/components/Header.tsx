@@ -1,11 +1,14 @@
 import React from "react";
+interface Nums {
+	num: number;
+}
 
-const header = () => {
+const header: React.FC<Nums> = ({ num }) => {
 	return (
 		<header className="flex p-5 justify-between">
 			<div>
 				<h1 className="text-3xl font-black">Opportunities</h1>
-				<p className="text-xs pt-1 text-gray-500 ml-1">Showing 73 results</p>
+				<p className="text-xs pt-1 text-gray-500 ml-1">Showing {num} results</p>
 			</div>
 			<div className="pt-4">
 				<div>
