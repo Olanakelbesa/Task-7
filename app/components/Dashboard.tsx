@@ -1,0 +1,29 @@
+"use client";
+import Header from "./Header";
+import JobCard from "./JobCard";
+import useJobData from "../../utils/JobData";
+import Link from "next/link";
+
+const Dashboard = () => {
+	const { jobData, error, loading } = useJobData();
+	console.log("jobData", jobData);
+
+	return (
+		<div className="m-5 h-full w-full max-w-6xl pl-5">
+			<Header />
+
+			{loading && <div>Loading...</div>}
+			{error && <div>Error: {error}</div>}
+			{jobData &&
+				jobData.length > 0 &&
+				jobData.map((job, index) => (
+					<Link href={`/JobDes/${index}`} key={index}>
+						<JobCard job={job} key={index} />
+					</Link>
+				))}
+			{jobData && jobData.length === 0 && <div>No job listings available</div>}
+		</div>
+	);
+};
+
+export default Dashboard;
