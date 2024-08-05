@@ -1,4 +1,4 @@
-Sure, I'll include the `react-icons` library in the list of technologies used. Here's the updated README file:
+Certainly! Below is the updated README file, tailored to include the specific task for integrating API data into your application.
 
 ---
 
@@ -15,7 +15,10 @@ This project is a job listing application built using Next.js, React, and Tailwi
   - [Task 6: Building Job Listing Application](#task-6-building-job-listing-application)
     - [Objective](#objective)
     - [Steps](#steps)
-- [Learn More](#learn-more)
+  - [Task 7: Integrating API Data into the Application](#task-7-integrating-api-data-into-the-application)
+    - [Objective](#objective-1)
+    - [Steps](#steps-1)
+    - [Additional Information](#additional-information)
 - [Screenshots](#screenshots)
 - [Technologies Used](#technologies-used)
 
@@ -57,8 +60,6 @@ Before you begin, ensure you have the following installed:
 
     Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
 
-
-
 ## Task Series
 
 ### Task 6: Building Job Listing Application
@@ -84,22 +85,42 @@ Create a React component for a job card and populate it with dummy data. Additio
 4. **Create the Applicants Dashboard:**
    - Use Tailwind CSS to style the job description and other details.
 
+### Task 7: Integrating API Data into the Application
 
-## Learn More
+**Objective:**
 
-To learn more about Next.js, take a look at the following resources:
+Integrate data from a provided API endpoint into your application and populate the cards with this fetched data.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Steps:**
 
-## Contact
+1. **Checkout API Endpoint:**
+   - Navigate to the provided API endpoint.
+   - Familiarize yourself with the structure of the data returned by the endpoint, including the fields and format.
 
-For any questions or assistance, please reach out to your mentors or contact [your email].
+2. **Fetch Data from Endpoint:**
+   - Within your application, implement a function to fetch data from the API endpoint.
+   - Use appropriate methods such as `fetch()` or libraries like Axios to make an HTTP request to the endpoint.
+   - Ensure that the fetched data is an array of objects that you can use to populate the cards in the next step.
+
+3. **Populate Cards with Fetched Data:**
+   - Modify your application logic to replace the existing dummy data with the data fetched from the API endpoint.
+   - Populate the cards in your application with the fetched data, ensuring that each card corresponds to an object in the array.
+   - Display relevant information from the fetched data within each card, such as name, title, description, etc.
+
+4. **Reach Out for Assistance:**
+   - If you encounter any challenges while fetching or integrating the API data into your application, don't hesitate to reach out to your mentors for assistance.
+   - Your mentors are available to provide guidance and support throughout the process.
+
+
+**API Endpoint:**
+- Documentation: [Postman API Documentation](https://documenter.getpostman.com/view/27955515/2sA3rwMEUX)
+- Base URL: `https://akil-backend.onrender.com/`
+
 
 ## Screenshots
 
-![Screenshot 2024-08-04 041319](https://github.com/user-attachments/assets/ca3f0329-647d-4764-9bd8-5dc5c873e3c7)
-![Screenshot 2024-08-04 041502](https://github.com/user-attachments/assets/abd28a6f-9ab5-4f0b-8479-3929e095c2bb)
+![Screenshot 2024-08-05 145303](https://github.com/user-attachments/assets/9a395f0a-c0c7-4ffb-83a8-1edfc1cf0377)
+![Screenshot 2024-08-05 145328](https://github.com/user-attachments/assets/b4ff8fb9-f998-439c-913f-0bd22b3b2883)
 
 
 ## Technologies Used
@@ -109,4 +130,6 @@ For any questions or assistance, please reach out to your mentors or contact [yo
 - Tailwind CSS
 - TypeScript
 - react-icons
+
+---
 
